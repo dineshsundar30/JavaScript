@@ -24,6 +24,9 @@ console.log(marks.indexOf(100))
 // to check the element is present in the array
 console.log(marks.includes(120))
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+                                               // reduce
+
 var sum =0
 for(let i =0;i<marks.length;i++)
 {
@@ -32,10 +35,11 @@ for(let i =0;i<marks.length;i++)
 }
 console.log(sum)
 
-//reduce filter map
+//reduce
 let total =marks.reduce((sum,mark)=>sum+mark,0)     //marks.reduce((variable element,itterater)=>expression,variable element value)
 console.log(total)
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
+                                            //filter 
 var scores = [12,13,14,16]
 //create new array with even numbers of scores and multiply each value
 // with 3 and sum themarray [12,14,16]
@@ -49,10 +53,12 @@ for(let i =0;i<scores.length;i++)
     }
 }
 console.log(evenScores)
+
+//filter                                                            // where you need to use decler the other variable like var sum =0 use reduce and where not needed use filter
 let newFilterEvenScores =scores.filter(score=>score%2==0)
 console.log(newFilterEvenScores) //[ 12, 14, 16 ]=>[36,42,48]
-
-//map
+-------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            //map
 let mappedArray=newFilterEvenScores.map(score=>score*3)
 console.log(mappedArray)
 let totalVal=mappedArray.reduce((sum,val)=>sum+val,0)
