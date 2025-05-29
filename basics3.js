@@ -31,9 +31,11 @@ for(let i =0;i<marks.length;i++)
     sum = sum + marks[i] //32+40
 }
 console.log(sum)
+
 //reduce filter map
-let total =marks.reduce((sum,mark)=>sum+mark,0)
+let total =marks.reduce((sum,mark)=>sum+mark,0)     //marks.reduce((variable element,itterater)=>expression,variable element value)
 console.log(total)
+
 var scores = [12,13,14,16]
 //create new array with even numbers of scores and multiply each value
 // with 3 and sum themarray [12,14,16]
