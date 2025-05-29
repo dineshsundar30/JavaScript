@@ -20,16 +20,13 @@ module.exports = class Person
         console.log(this.firstName+this.lastName)
     }
 
-
-
-
-
-
 }
+
+
+// console.log(person.age)
+// console.log(person.location)
 
 // let person =new Person("Tim","Joseph")
 // let person1 =new Person("CHris","JOnes")
-// console.log(person.age)
-// console.log(person.location)
 // console.log(person.fullName())
 // console.log(person1.fullName())
