@@ -9,12 +9,18 @@ console.log(marks[2]) //35
 marks[3] = 14
 console.log(marks) //[20,40,35,14,37,100]
 console.log(marks.length) //6
+
 marks.push(65)
 console.log(marks) //[20,40,35,14,37,100,65]
-marks.pop()//[20,40,35,14,37,100]
+
+marks.pop()
+console.log(marks) //[20,40,35,14,37,100]
+
 marks.unshift(12)
-console.log(marks)
+console.log(marks) //[12,20,40,35,14,37,100]
+
 console.log(marks.indexOf(100))
+
 //120 in the array
 console.log(marks.includes(120))
 var sum =0
