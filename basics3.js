@@ -10,7 +10,7 @@ marks[3] = 14
 console.log(marks) //[20,40,35,14,37,100]
 console.log(marks.length) //6
 
-marks.push(65)
+marks.push(65)            // to add the velue into the array
 console.log(marks) //[20,40,35,14,37,100,65]
 
 marks.pop()
