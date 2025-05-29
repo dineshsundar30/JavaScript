@@ -21,8 +21,9 @@ console.log(marks) //[12,20,40,35,14,37,100]
 
 console.log(marks.indexOf(100))
 
-//120 in the array
+// to check the element is present in the array
 console.log(marks.includes(120))
+
 var sum =0
 for(let i =0;i<marks.length;i++)
 {
