@@ -1,4 +1,4 @@
-  const Person = require('./basics7')
+const Person = require('./basics7')
 let day = 'tuesday '
 console.log(day.length)  //8
 let subDay = day.slice(0,4)
