@@ -56,7 +56,7 @@ console.log(evenScores)
 
 //filter                                                            // where you need to use decler the other variable like var sum =0 use reduce and where not needed use filter
 let newFilterEvenScores =scores.filter(score=>score%2==0)
-console.log(newFilterEvenScores) //[ 12, 14, 16 ]=>[36,42,48]
+console.log(newFilterEvenScores) 
 -------------------------------------------------------------------------------------------------------------------------------------------------
                                                             //map
 let mappedArray=newFilterEvenScores.map(score=>score*3)
