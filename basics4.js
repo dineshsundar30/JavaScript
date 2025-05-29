@@ -21,7 +21,7 @@ console.log(sum)
 console.log(greet)
 
 //do not have name =>Anyonymus function-- Function expressions
-
+for anynoymus function only we can give a variable name
 let sumOfIntegers = function(c,d)
 {
     return c+d
