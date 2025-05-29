@@ -22,11 +22,13 @@ console.log("Hello World")
  console.log(!required)
 
 
-
-
-
-
-
+| Feature        | `var`             | `let`               | `const`             |
+| -------------- | ----------------- | ------------------- | ------------------- |
+| Scope          | Function          | Block               | Block               |
+| Hoisting       | Yes (initialized) | Yes (uninitialized) | Yes (uninitialized) |
+| Re-declaration | Allowed           | Not allowed         | Not allowed         |
+| Reassignment   | Allowed           | Allowed             | ❌ Not allowed       |
+| Introduced in  | ES5               | ES6 (2015)          | ES6 (2015)          |
 
 
 //these are comments
