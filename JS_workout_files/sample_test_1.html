@@ -1,0 +1,22 @@
+<h2>Adding Two Numbers</h2>
+
+<input id="num1">
+<input id="num2">
+<button onclick="adding()">Add</button>
+<p id="result">Result :</p>
+
+<script>
+// These hold the HTML input ELEMENTS
+var input1 = document.getElementById('num1')
+var input2 = document.getElementById('num2')
+var Total = document.getElementById('result')
+
+function adding() {
+    // These hold the actual NUMBERS
+    var value1 = Number(input1.value)
+    var value2 = Number(input2.value)
+    var total_result = value1 + value2
+
+    Total.textContent = "Result: " + total_result
+}
+</script>

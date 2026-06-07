@@ -1,0 +1,51 @@
+<h2>Guess the Number Game</h2>
+
+<p>Guess a number between 1 and 10. You have 5 attempts to guess the correct number.</p>
+
+<input id="guess">
+<button onclick="guessing()">Guess</button>
+<p id="score">Attampt: 0</p>
+<p id="result">Result :</p> 
+
+
+<script>
+    var Attampt = 1
+    var randomNumber = Math.floor(Math.random() * 10) + 1
+
+    var result = document.getElementById('result')
+    var score = document.getElementById('score')
+
+    function guessing() {
+        var guess = document.getElementById('guess').value
+        
+        // 1. Only allow the guess if they haven't run out of turns (1 to 5)
+        if (Attampt <= 5) {
+            
+            // 2. Check if the player guessed correctly
+            if (guess == randomNumber) {
+                result.textContent = "Correct! guessed num is " + randomNumber;
+                if(Attampt == 1) {
+                    alert("You are a genius! You got it right on the first try!")
+                }
+                Attampt = 6 // Forces the game to lock on the next click so they can't keep playing
+                
+            } else { // 3. Runs if the guess is wrong
+                
+                if (Attampt == 5) {
+                    // Instantly triggers Game Over on the 5th wrong guess so it doesn't say "Try again"
+                    result.textContent = "Game Over! The correct number was " + randomNumber
+                    score.textContent = "Attampt: " + Attampt
+                } else {
+                    // They still have turns left
+                    result.textContent = "Wrong! Try again."
+                    score.textContent = "Attampt: " + Attampt
+                }
+                Attampt += 1 // Move to the next attempt number
+            }
+        }
+        else {
+            // 4. This block triggers if they click the button AFTER the game is already over
+            result.textContent = "Game Over! The correct number was " + randomNumber;
+        }
+    }
+</script>
