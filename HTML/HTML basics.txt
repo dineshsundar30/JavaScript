@@ -1,0 +1,196 @@
+                          <!--htlm NOTES-->
+commands
+ctrl + forward slash to command and uncommand
+              ---------*-----------
+			  
+<h1>this headr tag can go <h1> to <h6> </h1>
+<p>these html tage takes everything as block </p>
+             ---------*-----------
+
+
+old way to mack chanes in bold and italics
+<p><b>This is text that is in bold </b></p>
+<p><i>This is text that is in italics</i></p>
+
+New way to mack chanes in bold and italics
+<p><strong>This is text that is in bold</strong></p>
+<p><em>This is text that is in italics</em></p>
+             ---------*-----------
+
+
+
+list 
+ordered list  
+
+                       
+<h1>Lists</h1>
+<ol>
+<1i>First Item</li>
+<1i>Second Item</li>
+</ol>
+
+un ordered list 
+<h1>Lists</h1>
+<ul>
+<1i>First Item</li>
+<1i>Second Item</li>
+</ul> 
+
+
+O/P  
+ordered list  
+l. First Item
+2. Second Item
+
+unordered list  
+. First Item
+. Second Item
+             ---------*-----------
+
+
+nested ordered list
+
+<bodY>
+  <h1>Lists</h1>
+  <ol>
+    <li>ltem One</li>
+    <li>ltem Two</li>
+   <ul>
+      <li>im nested inside</li>
+      <1i>A1so nested!</li>
+	 <ol>
+      <1i><strong>Woah </strong>l'm really nested</li>
+	 </ol>
+     </ul>
+    </ol>
+	             ---------*-----------
+				 
+				 
+divs and spans
+<div class="group1">
+....
+</div>
+ 
+spans
+
+<span>  this is use to group one lnie things</span>
+             ---------*-----------
+
+image tag
+<img src="filename.png" alt="" or alt="opps file is missing">
+             ---------*-----------
+			 
+
+a(anchor) tag - use to refer and attach a new html page
+
+<a href="new.htlm"></a>  or <a href="new.htlm">click me</a>
+we can grap and use out side image or link using thes img and a tag
+<a href="https://www.facebook.com">facebook</a>
+
+to use clickable image
+<a href="https://www.djangoproject.com/"><img src="https://datascientest.com/en/wp-content/uploads/sites/9/2023/05/django1.jpg"></a>
+             ---------*-----------
+
+table tag
+<bodY>
+<table>  or --> for border <table border="1">
+  <thead>  -->thead is use to define the column name
+    <th>Number</th>
+    <th>Country</th>
+	<th>color</th>
+  </thead>
+  <tr>
+    <td>91</td>
+    <td>india</td>
+    <td>red</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>india2</td>
+    <td>green</td>
+  </tr>
+</table>
+</bodY>
+
+forms
+<body>
+<form>
+  <h1>Log In </h1>
+  <h2>P1ease Input your Email and Password</h2>
+    <input type="email" name="useremail" value="Emai1 Here">
+    <input type= "password" name="Password" value=''>
+    <input type="submit" name="" value="submit" >
+</form>
+</body>
+
+-------------------------------------
+<bodY>
+<form action="https://www.facebook.com" method="get">
+  <p>Enter Text and take me to FB:</p>
+    <input type="text" name="userinput" value="">
+    <input type="submit" name="" value="submit">
+</form>
+</bodY>
+
+------------------------------------------
+
+label
+
+<bodY>
+<form>
+  <!-- Using a Label with for -->
+ <label for="userInput"> enter input: </label>
+ <input id="userinput" type="Text"  name=""  value="hello!">
+
+ </form>
+</body >
+
+Note: <!-- insted of a value you can use a placeholder it's 
+                     visible in lite fount to-->
+ <input id="userinput" type="Text"  name=""  placeholder="hello!">
+ ------------------------------------------
+ 
+ 
+required
+ 
+ <input type= "password" name="Password" value='' required>
+ if you added required in the last it's will macksure 
+ we entered a value if no means it will show error
+ 
+ ------------------------------------------
+ 
+radio button
+ 
+<bodY>
+  <h1>Hote1 Feedback Form </h1>
+  
+  <form method="get">
+    	<h2>Are you from inside the india? Or Outside the india!</h2>
+		
+   <label for="inusa"> lnside: </label>
+   <input id="inusa" type="radio" name="loc" value="inside">
+   
+   <label for="outusa">Outside: </label>
+   <input id="outusa" type="radio" name="loc" value="Outside">
+  </form>
+  </bodY>
+  
+  here you should use the same name or the radio button not 
+  work properly we can select both options
+  
+  ----------------------------------------------------------
+  dropdown
+  
+  <h2>How was your service?</h2>
+   <select name="stars">
+     <option value="Great">3</option>
+     <option value="okay">2</option>
+     <option value="Bad">1</option>
+	</select>
+	
+----------------------------------------------------------
+textarea
+
+<h2>Any other feedback?</h2>
+ <textarea name="mytext" rows="8" cols="80"></textarea>
+ <input type="submit" name="" value="submit">
