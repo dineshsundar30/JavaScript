@@ -38,6 +38,13 @@ console.log(sum)
 //reduce
 let total =marks.reduce((sum,mark)=>sum+mark,0)     //marks.reduce((variable element,itterater)=>expression,variable element value)
 console.log(total)
+
+                                                              /*
+                                                              array.reduce((accumulator, currentElement) => {
+                                                                  return something;
+                                                              }, initialValue);
+                                                              */
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
                                             //filter 
 var scores = [12,13,14,16]
