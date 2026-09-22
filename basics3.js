@@ -39,8 +39,13 @@ console.log(sum)
 let total =marks.reduce((sum,mark)=>sum+mark,0)     //marks.reduce((variable element,itterater)=>expression,variable element value)
 console.log(total)
 
-                                                              /*
-                                                              array.reduce((accumulator, currentElement) => {
+/*
+
+If 0 is provided: accumulator starts at 0.
+If omitted: the first array element becomes the accumulator.
+Using 0 is safer for empty arrays, because reduce() returns 0 instead of throwing an error.
+
+Example:                                                      array.reduce((accumulator, currentElement) => {
                                                                   return something;
                                                               }, initialValue);
                                                               */
